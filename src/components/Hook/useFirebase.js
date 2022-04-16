@@ -21,11 +21,10 @@ const useFirebase = () => {
     }
 
     const handleSignout = () => {
-        signOut(auth).then(() => {
-            setUser({})
-        }).catch((error) => {
-            console.error(error)
-        });
+        signOut(auth).then(() => { })
+            .catch((error) => {
+                console.error(error)
+            });
     }
 
     useEffect(() => {
